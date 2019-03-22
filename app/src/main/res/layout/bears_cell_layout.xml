@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bears_cell_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical">
+
+    <!-- Image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="660px"
+        android:id="@+id/bear_image"
+        android:src="@drawable/les_bears"/>
+
+    <!-- Bear Name -->
+    <TextView
+        android:id="@+id/bear_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bear_image"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Les Bears"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Distance Away -->
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bear_name"
+        android:text="5 meters away"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
